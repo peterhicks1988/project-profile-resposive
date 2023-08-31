@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+    href="style.css">
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 'Roboto', sans-serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  /* opacity: 0.85; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("image/audio-room.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("image/homePage.jpg");
+    min-height: 100%;
+}
+
+.bgimg-3 {
+    background-image: url("image/freestanding.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position:absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:aqua;
+}
+
+.caption span.border {
+    background-color: black;
+    color:cadetblue;
+    padding: 18px;
+    font-size: 75px;
+    letter-spacing: 10px;
+    opacity: 0.65;
+}
+
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 25px 'Roboto', sans-serif;
+}
+header, footer {
+    background: #496375;
+    color: #dcecf7;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;   
+}
+.headerButtons {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #496375;
+  color: #dcecf7;
+  text-align: center;
+
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.logoHeader {
+    font-size: 30px;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="player" autoplay loop>
+        <source src="audio/bable.mp3" type="audio/mp3">
+    </audio>
+    <div class="header" id="myHeader">
+        <h1 class="logoHeader">Thunde&#9736; Tech</h1>
+        <div class="headerButtons">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="headerButtons">
+            <ul>
+                <li><a href="index.html">What's new</a></li>
+            </ul>
+        </div>
+        <div class="headerButtons">
+            <ul>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </div><div class="headerButtons">
+            <ul>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+      </div>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Thunde&#9736; Tech</span>
+        </div>
+    </div>
+    <div style="color:black; background-color: darkgray; text-align: center; padding:50px 80px;text-align: justify;">
+        <h1 style="text-align: center;">About Thunder Tech</h1>
+        <p>Thunder Tech was created by an audio fenatic, he was tired of searching though multiple companies to find the best audio. At Thunder Tech we want only the best selection of audio equipment. 
+            We have a selection of premium audio companies that deliver unique and luxury audio equipment. 
+            All of our products go though a strenuous selection of tests before advertising on our website. The tests consist of audio quality and durability, peramiters of which are provided by the manufacurer and qualityof craftsmenship. 
+            Thunder Tech is always the first to sell latest products.</p>  
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">Audio for all your needs</span>
+        </div>
+    </div>
+    <div style="color:black; background-color: darkgray; text-align: center; padding:50px 80px;text-align: justify;">
+        <h1 style="text-align: center;">Our promise</h1>
+              <p>At Thunder Tech, we promise to give the greatest selection of premium
+                   speakers in the world. Our specialist searches the globe for the latest and greatest.
+                    All our products have been tried and tested, to see if they meet the Thunder Tech standards.</p>
+          </div>
+    </div>
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border">Listen to greatness</span>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="headerButtons">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="headerButtons">
+                <ul>
+                    <li><a href="index.html">What's new</a></li>
+                </ul>
+            </div>
+            <div class="headerButtons">
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div><div class="headerButtons">
+                <ul>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Thunder Tech &#169;</h2>
+                <p>Author: Peter Hicks</p>
+                    <a href="mailto:petehicks1988@gmail.com">Petehicks1988@gmail.com</a></p>
+            </div>
+        </nav>
+    
+    </footer>
+    <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (!isChrome){
+        $('#iframeAudio').remove()
+            }
+         else {
+        $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+         }
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+</body>
+</html>
